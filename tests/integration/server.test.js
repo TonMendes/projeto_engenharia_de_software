@@ -5,7 +5,6 @@ describe('Testes de Integração do Servidor', () => {
   afterAll((done) => {
     server.close(done);
   });
-
   it('GET / deve retornar status 200 e a mensagem correta', async () => {
     const response = await request(app).get('/');
     expect(response.status).toBe(200);
