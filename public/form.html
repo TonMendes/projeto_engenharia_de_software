@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar/Editar Jogo - Prateleira de Jogos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Prateleira de Jogos</h1>
+        <nav>
+            <a href="/" class="nav-link">Minha Prateleira</a>
+            <a href="/form.html" class="nav-link active">Adicionar Jogo</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2 id="form-title">Adicionar Novo Jogo</h2>
+
+            <div class="mock-api-section">
+                <h3>Buscar Jogo na Base de Dados</h3>
+                <div class="search-container">
+                    <input type="text" id="search-game" placeholder="Digite o nome do jogo (ex: Cyberpunk 2077)">
+                    <button onclick="searchGame()" class="btn-primary">Buscar</button>
+                </div>
+                <div id="search-message"></div>
+            </div>
+
+            <form id="game-form">
+                <div class="form-group">
+                    <label for="nome">Nome do Jogo *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="desenvolvedor">Desenvolvedor</label>
+                    <input type="text" id="desenvolvedor" name="desenvolvedor">
+                </div>
+
+                <div class="form-group">
+                    <label for="anoLancamento">Ano de Lançamento</label>
+                    <input type="number" id="anoLancamento" name="anoLancamento" min="1950" max="2100">
+                </div>
+
+                <div class="form-group">
+                    <label for="plataforma">Plataforma *</label>
+                    <input type="text" id="plataforma" name="plataforma" placeholder="Ex: PC, PS5, Xbox, Switch" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status *</label>
+                    <select id="status" name="status" required>
+                        <option value="">Selecione...</option>
+                        <option value="Jogando">Jogando</option>
+                        <option value="Finalizado">Finalizado</option>
+                        <option value="Backlog">Backlog</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="imagemCapa">URL da Imagem de Capa</label>
+                    <input type="url" id="imagemCapa" name="imagemCapa" placeholder="https://exemplo.com/imagem.jpg">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Salvar</button>
+                    <a href="/" class="btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="/js/form.js"></script>
+</body>
+</html>

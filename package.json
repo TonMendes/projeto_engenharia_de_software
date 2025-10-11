@@ -4,6 +4,8 @@
   "description": "Projeto final da disciplina de Engenharia de Software",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
     "test": "jest"
   },
   "repository": {
@@ -11,7 +13,7 @@
     "url": "git+https://github.com/TonMendes/projeto_engenharia_de_software.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Everton Mendes Da Silva",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TonMendes/projeto_engenharia_de_software/issues"

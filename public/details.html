@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Jogo - Prateleira de Jogos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Prateleira de Jogos</h1>
+        <nav>
+            <a href="/" class="nav-link">Minha Prateleira</a>
+            <a href="/form.html" class="nav-link">Adicionar Jogo</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="details-container">
+            <div class="details-header">
+                <button onclick="window.history.back()" class="btn-back">Voltar</button>
+                <div class="details-actions">
+                    <button onclick="editGame()" class="btn-primary">Editar</button>
+                    <button onclick="deleteGame()" class="btn-delete">Excluir</button>
+                </div>
+            </div>
+
+            <div id="game-details" class="game-details">
+            </div>
+
+            <div id="loading" class="loading">Carregando...</div>
+            <div id="error" class="error-message" style="display: none;"></div>
+        </div>
+    </main>
+
+    <script src="/js/details.js"></script>
+</body>
+</html>

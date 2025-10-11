@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prateleira de Jogos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Prateleira de Jogos</h1>
+        <nav>
+            <a href="/" class="nav-link active">Minha Prateleira</a>
+            <a href="/form.html" class="nav-link">Adicionar Jogo</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="filter-container">
+            <button class="filter-btn active" data-status="todos">Todos</button>
+            <button class="filter-btn" data-status="Jogando">Jogando</button>
+            <button class="filter-btn" data-status="Finalizado">Finalizado</button>
+            <button class="filter-btn" data-status="Backlog">Backlog</button>
+        </div>
+
+        <div id="games-container" class="games-grid">
+        </div>
+
+        <div id="empty-state" class="empty-state" style="display: none;">
+            <p>Nenhum jogo encontrado. Adicione seu primeiro jogo!</p>
+            <a href="/form.html" class="btn-primary">Adicionar Jogo</a>
+        </div>
+    </main>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>
