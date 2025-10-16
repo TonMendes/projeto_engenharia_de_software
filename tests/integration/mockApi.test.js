@@ -18,4 +18,12 @@ describe('Testes da API Mockada (/api/mock/games)', () => {
     expect(response.status).toBe(404);
     expect(response.body).toHaveProperty('message', 'Jogo não encontrado no serviço mockado.');
   });
+
+  it('GET /search deve retornar 400 quando não informar query parameter', async () => {
+    const response = await request(app)
+      .get('/api/mock/games/search');
+
+    expect(response.status).toBe(400);
+    expect(response.body).toHaveProperty('message', 'Parâmetro de busca "q" é obrigatório');
+  });
 });

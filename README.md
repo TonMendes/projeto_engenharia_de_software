@@ -41,6 +41,7 @@ npm test
 
 ```
 src/
+  ├── controllers/     # Lógica de negócio
   ├── routes/          # Rotas da API
   ├── models/          # Modelo de dados
   ├── database/        # DB em memória
@@ -53,8 +54,9 @@ public/
   └── css/js/          # Estilos e scripts
 
 tests/
-  ├── integration/     # Testes de API
-  └── e2e/            # Testes de fluxo completo
+  ├── unit/            # Testes unitários
+  ├── integration/     # Testes de integração
+  └── e2e/            # Testes de aceitação
 ```
 
 ## API

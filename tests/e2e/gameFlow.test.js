@@ -98,7 +98,7 @@ describe('Testes E2E - Fluxo Completo de Jogos', () => {
     });
 
     expect(invalidGame.status).toBe(400);
-    expect(invalidGame.body.message).toContain('obrigatórios');
+    expect(invalidGame.body.message).toBe('Erro de validação');
 
     const validGame = await request(app).post('/api/games').send({
       nome: 'Jogo Completo',
