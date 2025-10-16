@@ -3,7 +3,7 @@ class MockController {
     nome: "Cyberpunk 2077",
     desenvolvedor: "CD PROJEKT RED",
     anoLancamento: 2020,
-    imagemCapa: "https://cdn.example.com/cyberpunk2077_cover.jpg"
+    imagemCapa: "https://images.wallpapersden.com/image/download/background-of-cyberpunk-2077_bGVtZWiUmZqaraWkpJRmbmdlrWZlbWU.jpg"
   };
 
   static searchGame(req, res) {
